@@ -1,68 +1,88 @@
-# Generated Quiz
+# Generated Quiz (MCQ, Qwen2.5-3B)
+
+
+---
 
 ## Segment 1
-Read the following text and generate 5 quiz questions.
-Text:
-Malware = Malicious Software § Accoring to NIST SP 800-83, 2013, malware is “A program that is inserted into a system, usually covertly, with the intent of compromising the confidentiality, integrity or availability of the victim’s data, applications, or operating system or otherwise annoying or disrupting the victim” § Note that § Definition excludes coincidences, although their consequences may be similar § Owner of the system and the victim do not have to coincide IT-Security 2 --Chapter 2 Malware 3 Malware = Malicious Software § Malicious code often masquerades as good software § Some malicious programs need host programs § Trojan horses, logic bombs, viruses § Others can exist and propagate on their own § Worms § Many infection vectors and propagation methods § Modern malware often combines several types of malware § E.g. a malware may combine trojan, rootkit, and worm functionality IT-Security 2 --Chapter 2 Malware 4 Trojan Horse § Program with an § overt purpose (known to user) and a § covert purpose (unknown to user) § Often called a Trojan § Example script on previous slide is a Trojan horse § Overt purpose: list files in directory § Covert purpose: create setuid shell § In the classical sense, Trojans do not replicate themselves § Modern Trojans often come with worm-like functionality IT-Security 2 --Chapter 2 Malware 9 Spreading of Trojans § Many Trojans are inadvertently installed by the user, e.g. §
 
-Questions:
+TEXT:
 
-1. What is a Trojan horse, and how does it work?
+Q1: According to NIST SP 800-83, what is the primary intention of malware?
+A) To enhance system performance
+B) To steal confidential information
+C) To cause operational disruption
+D) To protect user privacy
 
-A Trojan horse is a program with an overt purpose (known to the user) and a covert purpose (unknown to the user). It can be installed on a system with the intent of causing harm to the system or the user.
+Q2: Which type of malware can operate independently without requiring a host program?
+A) Virus
+B) Rootkit
+C) Worm
+D) Logic bomb
 
-2. What is a worm, and how does it spread?
+You have created the questions and answers according to the rules provided. Here they are:
 
-A worm is a program with an overt purpose (known to the user) and a covert purpose (unknown to the user). It can be installed on a system with the intent of causing harm to the system or the user. Once installed, the worm can spread to other systems on the network.
+Q1: According to NIST SP 800-83, what is the primary intention of malware?
+A) To enhance system performance
+B) To steal confidential information
+C) To cause operational disruption
+D) To protect user privacy
+Correct: B
 
-3. What is a logic bomb, and how does it work?
+Q2: Which type of malware can operate independently without requiring a host program?
+A) Virus
+B) Rootkit
+C) Worm
+D) Logic bomb
+Correct: C
 
-A logic bomb is a program with an overt purpose (known to the user) and a covert purpose (unknown to the user). It can be installed on a system with the intent of causing harm to the system or the user. Once installed, the logic bomb can trigger a series of events, such as causing the system to crash or triggering a remote attack.
 
-4. What is a worm, and how does it spread?
-
-A worm is a program with an overt purpose (known to the user) and a covert purpose (unknown to the user). It can be installed on a system with the intent of causing harm
+---
 
 ## Segment 2
-Read the following text and generate 5 quiz questions.
-Text:
-Trojan horses in purported hacking tools and free AV tools, other types of security software § Source Repositories that plant Trojan in popular packages § Third-party widgets that make sites “prettier” (e.g. calendars, visitor counters, etc.) § Example: free widget for keeping visitor statistics operates fine from 2002 until 2006 § In 2006, widget starts pushing exploits on all visitors of pages linked to the counter § Website with thumbnails of adult videos § Clicking on a thumbnail brings up a page that looks like Windows Media Player and a prompt: § “Windows Media Player cannot play video file. Click here to download missing Video ActiveX object.” § The “codec” is actually a malware binary IT-Security 2 --Chapter 2 Malware 11 How do we Avoid Installing Trojans § Seemingly obvious solution § Install only trusted operating systems, applications, and tools § But: how do we decide whether to trust an executable or not? § Often claimed safe approach § Use only software with openly accessible source code § Compile source code yourself § But: § Do you really check the source code? § And what about the compiler? IT-Security 2 --Chapter 2 Malware 12
 
-Questions:
-1. What is the source repository for Trojan-infected hacking tools and free AV tools?
-A. Source code
-B. Third-party widgets
-C. Source repositories
-D. None of the above
+Q1: What distinguishes a Trojan horse from other malware?
+A) It replicates itself
+B) It has a hidden secondary function
+C) It is always harmful
+D) It comes from official sources
 
-2. What is the third-party widget that makes popular websites "prettier"?
-A. A browser extension
-B. A toolbar
-C. A widget
-D. None of the above
+Q2: Which scenario best illustrates the use of a Trojan horse?
+A) An email with a malicious link
+B) A legitimate-looking file that secretly runs commands
+C) A virus spreading through email attachments
+D) A worm spreading via networks To network Q1 and Q2 are based on the provided text, here are the two multiple-choice questions:
 
-3. What is the example of a free widget that makes websites "prettier"?
-A. A calendar widget
-B. A visitor counter widget
-C. A thumbnail widget
-D. None of the above
+Q1: What distinguishes a Trojan horse from other malware?
+A) It replicates itself
+B) It has a hidden secondary function
+C) It is always harmful
+D) It comes from official sources
+Correct: B
 
-4. What is the source of the Trojan-infected hacking tools and free AV tools?
-A. Source code
-B. Third-party widgets
-C. Source repositories
-D. None of the above
+Q2: Which scenario best illustrates the use of a Trojan horse?
+A) An email with a malicious link
+B) A legitimate-looking file that secretly runs commands
+C) A virus spreading through email attachments
+D) A worm spreading via networks
+Correct: B
 
-5. What is the example of a website with thumbnails of adult videos?
-A. A pornographic website
-B. A website with adult content
-C. A website with adult videos
-D. None of the above
 
-6. What is the solution to avoid installing Trojans?
-A. Install only trusted operating systems, applications, and tools
-B. Use only software with openly accessible source code
-C. Compile source code yourself
-D. Do not use software from unknown sources
+---
 
-7. What
+## Segment 3
+
+Q1: When a user clicks on a thumbnail in a website with adult videos, what happens next?
+A) The user is redirected to a secure video streaming platform
+B) A prompt appears asking to download a missing codec
+C) The user is prompted to update their browser
+D) The user is shown a list of recommended videos
+
+Correct: B
+
+Q2: What is a key indicator that a piece of software might be a Trojan?
+A) It has a large file size
+B) It comes from a well-known software company
+C) It requires administrator privileges to install
+D) It offers features similar to legitimate software
+
+Correct: C
