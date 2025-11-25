@@ -1,3 +1,5 @@
+#Integrating Qwen2.5-3B-Instruct model
+
 import os
 import pdfplumber
 from transformers import AutoTokenizer, AutoModelForCausalLM
