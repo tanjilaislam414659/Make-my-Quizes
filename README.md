@@ -1,38 +1,89 @@
-# AI Quiz Generator from Study Material
 
-This project is a small prototype that **generates quiz questions from study material** (e.g. lecture notes in PDF or text form) using an **open-source language model**.
+# 📘 AI Quiz Generator — PDF → MCQs
 
-It automatically:
-- Reads a PDF / text file containing course content
-- Extracts and cleans the text
-- Splits the content into smaller segments
-- Uses a local LLM to generate quiz questions from each segment
-- Saves all generated questions into a single Markdown file (`generated_quiz.md`)
-
-The goal is to explore how AI tools can **support teaching and learning** by helping to create practice questions from existing materials.
+This project is a prototype system that automatically generates **multiple-choice questions (MCQs)** from lecture materials such as PDFs or text files. It uses a fully local, open-source Large Language Model (**Qwen2.5-3B-Instruct**) to analyze content and generate structured quiz questions.
 
 ---
 
-## Features
+## 🚀 Features
 
-- 📄 **PDF/Text input**: place a `.pdf` or `.txt` file in the `data/` folder
-- 🔧 **Automatic text extraction** using `pdfplumber` (for PDFs)
-- ✂️ **Chunking**: long text is split into segments so the model can handle it
-- 🤖 **Question generation** using an open-source LLM  
-  (e.g. `TinyLlama/TinyLlama-1.1B-Chat-v1.0` via Hugging Face `transformers`)
-- 📝 **Markdown output**: all questions are saved to `generated_quiz.md` for easy viewing/editing
-
-> ⚠️ Note: The quality of the generated questions depends on the open-source model.
-> This project is intended as a **prototype** and not a production system.
+- **PDF & TXT input support** using `pdfplumber`
+- **Text chunking/segmentation** for focused AI reasoning  
+- **AI-generated MCQs** (A–D options with correct answer)
+- **Fully local** — no API keys, no online calls
+- **Markdown output** into `generated_quiz.md`
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```text
-Quiz-Generator/
-├── Data/
-│   └── lecture_notes.pdf       # or any other PDF/TXT file
-├── quiz_generator.py           # main script
-├── requirements.txt            # Python dependencies
-└── README.md                   # project documentation
+```
+AI-Quiz-Generator/
+├── Data/                    # Place your PDF/TXT files here
+│   └── example.pdf
+├── quiz_generator.py        # Main script
+├── requirements.txt         # Dependencies
+└── README.md                # Documentation
+```
+
+---
+
+## 🧠 How It Works
+
+1. **Parse PDF/Text** → extract content  
+2. **Segment text** → chunks ~900 characters  
+3. **Generate MCQs** → Qwen2.5 processes each segment  
+4. **Save results** → Markdown quiz output  
+
+---
+
+## ▶️ Setup & Usage
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Add your study file
+Place your `.pdf` or `.txt` into:
+```
+Data/
+```
+
+### 3. Run the generator
+```bash
+python quiz_generator.py
+```
+
+### 4. Open generated quiz
+```
+generated_quiz.md
+```
+
+---
+
+## 🤖 Why Qwen2.5-3B?
+
+| Model | Result |
+|-------|--------|
+| TinyLlama-1.1B | Weak / unstable MCQs |
+| Phi-2 | Inconsistent formatting |
+| Gemma 2B | Gated, requires login |
+| **Qwen2.5-3B** | ⭐ Best offline instruction-following, stable MCQs |
+
+---
+
+## 🔮 Future Improvements
+
+- LMS export formats (Moodle GIFT, ILIAS XML)
+- Difficulty levels
+- GUI using Streamlit
+- Better distractor generation
+- Self-evaluation using second model
+
+---
+
+## 🧑‍💻 Author
+
+Created by **Tanjila Islam**  
+A demonstration of integrating open-source AI tools into educational workflows.
